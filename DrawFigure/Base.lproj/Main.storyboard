@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H0r-JC-ukX">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,45 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-cg-F0m">
-                                <rect key="frame" x="29" y="258" width="317" height="286"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="63d-JN-bx5">
-                                        <rect key="frame" x="0.0" y="0.0" width="317" height="139"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCS-Xa-bbd" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="139"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fba-nj-IBs" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
-                                                <rect key="frame" x="108.33333333333334" y="0.0" width="100.33333333333334" height="139"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELI-sE-fFk" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
-                                                <rect key="frame" x="216.66666666666666" y="0.0" width="100.33333333333334" height="139"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-DZ-VfT">
-                                        <rect key="frame" x="0.0" y="147" width="317" height="139"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-8r-MaZ" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="139"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5j-do-dt0" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
-                                                <rect key="frame" x="108.33333333333334" y="0.0" width="100.33333333333334" height="139"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTY-O6-d8k" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
-                                                <rect key="frame" x="216.66666666666666" y="0.0" width="100.33333333333334" height="139"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTY-O6-d8k" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
+                                <rect key="frame" x="29" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5j-do-dt0" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
+                                <rect key="frame" x="110" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-8r-MaZ" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
+                                <rect key="frame" x="137" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELI-sE-fFk" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
+                                <rect key="frame" x="29" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fba-nj-IBs" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
+                                <rect key="frame" x="110" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCS-Xa-bbd" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
+                                <rect key="frame" x="137" y="380" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <view hidden="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QWz-KS-TSG" customClass="DrawViews" customModule="DrawFigure" customModuleProvider="target">
                                 <rect key="frame" x="22" y="10" width="331" height="748"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,16 +48,44 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="bottom" secondItem="fba-nj-IBs" secondAttribute="bottom" constant="278" id="8Ok-2J-VmO"/>
+                            <constraint firstItem="VCS-Xa-bbd" firstAttribute="top" secondItem="TOM-4G-5MF" secondAttribute="top" constant="292" id="9Tb-0J-2uJ"/>
+                            <constraint firstItem="D5j-do-dt0" firstAttribute="top" secondItem="TOM-4G-5MF" secondAttribute="top" constant="292" id="AEx-ar-37w"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="trailing" secondItem="pjN-8r-MaZ" secondAttribute="trailing" constant="118" id="CXP-De-WLK"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="bottom" secondItem="D5j-do-dt0" secondAttribute="bottom" constant="278" id="HG9-aa-v1Y"/>
+                            <constraint firstItem="fba-nj-IBs" firstAttribute="leading" secondItem="TOM-4G-5MF" secondAttribute="leading" constant="110" id="IWV-U7-wyW"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="bottom" secondItem="NTY-O6-d8k" secondAttribute="bottom" constant="278" id="Kgj-qk-kaC"/>
                             <constraint firstItem="QWz-KS-TSG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="NM4-eE-0Q0"/>
-                            <constraint firstAttribute="bottom" secondItem="MSp-cg-F0m" secondAttribute="bottom" constant="268" id="UPy-pK-fI0"/>
+                            <constraint firstItem="ELI-sE-fFk" firstAttribute="top" secondItem="TOM-4G-5MF" secondAttribute="top" constant="292" id="PZq-0z-Qbi"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="trailing" secondItem="ELI-sE-fFk" secondAttribute="trailing" constant="226" id="Tii-aC-Skx"/>
                             <constraint firstItem="QWz-KS-TSG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="Wu5-ub-Xhu"/>
                             <constraint firstAttribute="bottom" secondItem="QWz-KS-TSG" secondAttribute="bottom" constant="54" id="X68-B0-KaW"/>
-                            <constraint firstItem="MSp-cg-F0m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="258" id="YAu-KS-AOb"/>
+                            <constraint firstItem="VCS-Xa-bbd" firstAttribute="leading" secondItem="TOM-4G-5MF" secondAttribute="leading" constant="137" id="XSe-AU-3jo"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="bottom" secondItem="VCS-Xa-bbd" secondAttribute="bottom" constant="278" id="ZCs-Kp-G9N"/>
+                            <constraint firstItem="ELI-sE-fFk" firstAttribute="leading" secondItem="TOM-4G-5MF" secondAttribute="leading" constant="29" id="ZpR-i5-ezc"/>
+                            <constraint firstItem="pjN-8r-MaZ" firstAttribute="leading" secondItem="TOM-4G-5MF" secondAttribute="leading" constant="137" id="cVU-xD-1Cv"/>
+                            <constraint firstItem="NTY-O6-d8k" firstAttribute="top" secondItem="TOM-4G-5MF" secondAttribute="top" constant="292" id="dZu-vy-Ddd"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="trailing" secondItem="VCS-Xa-bbd" secondAttribute="trailing" constant="118" id="eyp-lY-138"/>
                             <constraint firstItem="QWz-KS-TSG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXD-8w-cr6"/>
-                            <constraint firstItem="MSp-cg-F0m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="kDq-oL-Td2"/>
-                            <constraint firstItem="QWz-KS-TSG" firstAttribute="centerX" secondItem="MSp-cg-F0m" secondAttribute="centerX" id="lYO-6L-jXm"/>
+                            <constraint firstItem="pjN-8r-MaZ" firstAttribute="top" secondItem="TOM-4G-5MF" secondAttribute="top" constant="292" id="fcN-0a-B54"/>
+                            <constraint firstItem="fba-nj-IBs" firstAttribute="top" secondItem="TOM-4G-5MF" secondAttribute="top" constant="292" id="j7l-jM-f8f"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="trailing" secondItem="fba-nj-IBs" secondAttribute="trailing" constant="145" id="kv2-xD-iC4"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="bottom" secondItem="pjN-8r-MaZ" secondAttribute="bottom" constant="278" id="oq8-iQ-eor"/>
+                            <constraint firstItem="D5j-do-dt0" firstAttribute="leading" secondItem="TOM-4G-5MF" secondAttribute="leading" constant="110" id="orQ-6z-e1k"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="trailing" secondItem="D5j-do-dt0" secondAttribute="trailing" constant="145" id="rNh-JM-lYB"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="bottom" secondItem="ELI-sE-fFk" secondAttribute="bottom" constant="278" id="rps-g3-VUY"/>
+                            <constraint firstItem="TOM-4G-5MF" firstAttribute="trailing" secondItem="NTY-O6-d8k" secondAttribute="trailing" constant="226" id="vYp-jp-XpV"/>
+                            <constraint firstItem="NTY-O6-d8k" firstAttribute="leading" secondItem="TOM-4G-5MF" secondAttribute="leading" constant="29" id="w6d-GD-bJk"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="TOM-4G-5MF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mct-1V-5tJ">
+                        <barButtonItem key="rightBarButtonItem" title="Change Back Image" id="UJN-yf-Evn">
+                            <connections>
+                                <action selector="changeImage:" destination="BYZ-38-t0r" id="x7o-FH-uJw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="backgroundView" destination="QWz-KS-TSG" id="LgY-4b-fmu"/>
                         <outletCollection property="label" destination="VCS-Xa-bbd" collectionClass="NSMutableArray" id="5Nh-xw-BSE"/>
@@ -84,6 +97,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.20000000000005" y="25.862068965517242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OYk-EI-dZS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H0r-JC-ukX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IDo-80-3G0">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fWs-zT-mfy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdq-3w-PxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="25.862068965517242"/>
         </scene>

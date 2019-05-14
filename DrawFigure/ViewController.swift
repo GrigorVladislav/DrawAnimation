@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    var backImage : UIImage!
     @IBOutlet var label: [DrawViews]!
     
+    @IBAction func changeImage(_ sender: Any) {
+        changeImage()
+    }
     
     @IBOutlet weak var backgroundView: DrawViews!
     lazy var animator = UIDynamicAnimator(referenceView: view)
@@ -122,7 +126,25 @@ class ViewController: UIViewController {
             })
         }
         backgroundView.isFaceUp = false
-    } 
+    }
+    @objc func changeImage() {
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        pickerController.allowsEditing = true
+        pickerController.sourceType = .photoLibrary;
+        self.present(pickerController, animated: true, completion: nil)
+    }
+   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    guard let image = info[.originalImage] as? UIImage else {
+        fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        
+    }
+    backgroundView.isCustomImage = true
+    backgroundView.customImage = image
+     dismiss(animated: true, completion: nil)
+    
+    }
+    
 }
 
 extension CGFloat {

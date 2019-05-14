@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 
 class DrawViews :UIView {
+    
+    var isCustomImage = false
+    var customImage: UIImage?
+   
     var sides: Int? {
         didSet {setNeedsDisplay(); setNeedsLayout()}
     }
@@ -25,6 +29,7 @@ class DrawViews :UIView {
     }
     
     override func draw(_ rect: CGRect) {
+      
         guard let context = UIGraphicsGetCurrentContext() else { return }
         if isFaceUp {
             if sides != nil && sides! > 2 {
@@ -32,8 +37,15 @@ class DrawViews :UIView {
             }
             drawCustomText(context: context, rect: rect, title: String(sides!))
         } else {
+            if(isCustomImage){
+                if let backImage = customImage{
+                   backImage.draw(in: bounds)
+                }
+            }
+            else{
             if let backgroundView =  UIImage(named: "images.jpg"){
                 context.draw(backgroundView.cgImage!, in: rect)
+                }
             }
         }
         setNeedsDisplay()

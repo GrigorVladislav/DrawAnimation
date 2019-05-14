@@ -16,7 +16,6 @@
 		844E7D922268CB6B0010F245 /* DrawFigureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E7D912268CB6B0010F245 /* DrawFigureUITests.swift */; };
 		844E7DA02268CB8A0010F245 /* DrawViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E7D9F2268CB8A0010F245 /* DrawViews.swift */; };
 		844E7DA22268D6C70010F245 /* ViewsBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E7DA12268D6C70010F245 /* ViewsBehavior.swift */; };
-		84660A362268DEDC00FB8275 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84660A352268DEDC00FB8275 /* images.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		844E7D932268CB6B0010F245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844E7D9F2268CB8A0010F245 /* DrawViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViews.swift; sourceTree = "<group>"; };
 		844E7DA12268D6C70010F245 /* ViewsBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsBehavior.swift; sourceTree = "<group>"; };
-		84660A352268DEDC00FB8275 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpg; path = ../../images.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 				844E7DA12268D6C70010F245 /* ViewsBehavior.swift */,
 				844E7D752268CB660010F245 /* Main.storyboard */,
 				844E7D782268CB6B0010F245 /* Assets.xcassets */,
-				84660A352268DEDC00FB8275 /* images.jpg */,
 				844E7D7A2268CB6B0010F245 /* LaunchScreen.storyboard */,
 				844E7D7D2268CB6B0010F245 /* Info.plist */,
 			);
@@ -241,7 +238,6 @@
 				844E7D7C2268CB6B0010F245 /* LaunchScreen.storyboard in Resources */,
 				844E7D792268CB6B0010F245 /* Assets.xcassets in Resources */,
 				844E7D772268CB660010F245 /* Main.storyboard in Resources */,
-				84660A362268DEDC00FB8275 /* images.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
